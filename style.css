@@ -1,0 +1,159 @@
+:root{
+    --gradient:linear-gradient(90deg,#4D4D4D, #4D4D4D);
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: #4D4D4D;
+    color: #fff;
+    overflow: hidden;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+
+section{
+    min-height: 100vh;
+    padding: 1 rem 7%;
+    padding-top: 6rem;
+}
+
+body{
+    height:300rem;
+    overflow-x: hidden;
+}
+
+.btn{
+    padding: .7rem 3rem;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--gradient);
+    border-radius: 5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+    text-transform: capitalize;
+}
+
+.heading{
+    color: #333;
+    padding: 1rem;
+    font-size: 4rem;
+    text-align: center;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    padding: 1.5rem 7%;
+    background: var(--gradient);
+    box-shadow: 0 .1rem .3rem #333;
+}
+
+header .logo{
+    color: #fff;
+    font-size: 2.5rem;
+    padding-right: 6rem;
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header .navbar ul li{
+    margin:0 2rem;
+}
+
+header .navbar ul li a{
+    font-size: 2rem;
+    color: #fff;
+}
+header .navbar ul li a.active,
+header .navbar ul li a:hover{
+    color:#999;
+}
+
+header #login{
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+header #login:hover{
+    color: #999;
+}
+
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* .about .image{
+    position: absolute;
+    width: 1000px;
+    height: 1072px;
+    left: 0px;
+    top: 0px;
+}
+.about .image img{
+    width: 1630px;
+    height: 670px;
+} */
+
+.content{
+    background: url("sarah-dorweiler-x2Tmfd1-SgA-unsplash\ 1.png") no-repeat center center/cover;
+    height: 120vh;
+    margin-top: -20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content input{
+    border-radius: 20px;
+    
+    width: 300px;
+    height: 50px;
+    margin: 15px 0;
+  
+}
+
+.fields{
+    margin-left: 35%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.loginbtn{
+    background-color: #4D4D4D;
+    border-radius: 30px;
+    padding: 20px 40px;
+    color: #FFFF;
+    margin: 15px 0;
+}
+
